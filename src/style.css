@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a2215;
+  font-family: "Manrope";
+  color: #bdd0b2;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #26321f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-inline: 10%;
+  border-radius: 10px;
+}
+.container h6 {
+  padding-top: 30px;
+  color: #99be83;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+}
+.container p {
+  font-size: 28px;
+  padding-inline: 20px;
+  padding-block: 20px 30px;
+  text-align: center;
+}
+
+.dice-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+.dice-wrapper .line-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  align-items: center;
+  padding-inline: 15px;
+  width: 100%;
+}
+.dice-wrapper .line-wrapper .line1, .dice-wrapper .line-wrapper .line2 {
+  border-bottom: 1px solid rgba(189, 208, 178, 0.7607843137);
+  width: 38%;
+}
+.dice-wrapper .line-wrapper div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.dice-wrapper .line-wrapper div span {
+  width: 7px;
+  height: 17px;
+  background-color: rgba(189, 208, 178, 0.7607843137);
+  border-radius: 10px;
+}
+
+button {
+  position: relative;
+  align-self: center;
+  background-color: #99be83;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 25px;
+}
+button svg {
+  width: 21px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 40px #99be83;
+}
+
+.attribution {
+  display: flex;
+  font-size: 11px;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+.attribution a {
+  color: #708e5f;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    margin-inline: 30%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    margin-inline: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

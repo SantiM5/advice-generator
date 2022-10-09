@@ -1,0 +1,136 @@
+$font: 'Manrope';
+$bg-color: #1a2215;
+$link: #708e5f;
+$font-color: #bdd0b2;
+$btn: #99be83;
+$box: #26321f;
+$line: #bdd0b2c2;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: $font;
+    color: $font-color;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: $box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-inline: 10%;
+    border-radius: 10px;
+
+    h6 {
+        padding-top: 30px;
+        color: $btn;
+        font-variant: small-caps;
+        letter-spacing: 3px;
+    }
+
+    p {
+        font-size: 28px;
+        padding-inline: 20px;
+        padding-block: 20px 30px;
+        text-align: center;
+    }
+}
+
+.dice-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 40px;
+
+    .line-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 6%;
+        align-items: center;
+        padding-inline: 15px;
+        width: 100%;
+
+        .line1, .line2 {
+            border-bottom: 1px solid $line;
+            width: 38%;
+        }
+
+        div {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                width: 7px;
+                height: 17px;
+                background-color: $line;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+button {
+    position: relative;
+    align-self: center;
+    background-color: $btn;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 25px;
+
+    svg {
+        width: 21px;
+    }
+}
+
+button:hover {
+    box-shadow: 0px 0px 40px $btn;
+}
+
+.attribution { 
+    display: flex;
+    font-size: 11px;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+
+    a {
+        color: $link;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    
+    .container {
+        margin-inline: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .container {
+        margin-inline: 20px;
+    }
+}
